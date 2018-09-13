@@ -16,7 +16,7 @@ router.beforeEach((to, from, next) => {
   NProgress.start();
   const publicPages = ['/login', '/signup'];
   const authRequired = !publicPages.includes(to.path);
-  const loggedIn = localStorage.getItem('user');
+  const loggedIn = localStorage.getItem('user-token');
 
   if (authRequired && !loggedIn) {
     return next('/signup');

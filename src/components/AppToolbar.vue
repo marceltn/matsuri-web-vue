@@ -86,6 +86,7 @@ export default {
         title: 'Logout',
         click: (e) => {
           window.getApp.$emit('APP_LOGOUT');
+          localStorage.removeItem('user-token');
         }
       }
     ],

@@ -16,15 +16,7 @@
                 </v-form>
               </v-card-text>
               <v-card-actions>
-                <v-btn icon>
-                  <v-icon color="blue">fa fa-facebook-square fa-lg</v-icon>
-                </v-btn>
-                <v-btn icon>
-                  <v-icon color="red">fa fa-google fa-lg</v-icon>
-                </v-btn>
-                <v-btn icon>
-                  <v-icon color="light-blue">fa fa-twitter fa-lg</v-icon>
-                </v-btn>
+                <router-link to="/login">Already have an account</router-link>
                 <v-spacer></v-spacer>
                 <v-btn block color="primary" @click="signup" :loading="loading">Sign up</v-btn>
               </v-card-actions>
