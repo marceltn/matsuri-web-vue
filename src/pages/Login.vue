@@ -56,7 +56,7 @@ export default {
             return;
           }
 
-          localStorage.setItem('user-token',response.data.token);
+          localStorage.setItem('user-token', response.data.token);
           window.getApp.$emit('APP_LOGIN_SUCCESS');
         })
         .catch(error => {
