@@ -9,8 +9,10 @@ instance.interceptors.request.use((config) => {
   const token = localStorage.getItem('user-token');
 
   if (token) {
-    config.headers.Authorization = `Bearer ${token}`;
+    config.headers.Authorization = `JWT ${token}`;
   }
+
+  config.headers.Accept = 'application/json';
 
   return config;
 }, (err) => {

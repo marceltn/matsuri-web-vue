@@ -1,3 +1,8 @@
+# 0.3.0
+
+- Added menu to create a new Item
+- Form for new Item
+
 # 0.2.0
 
 - Added login screen [/login]

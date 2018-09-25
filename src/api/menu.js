@@ -7,6 +7,13 @@ const Menu =  [
     name: 'Dashboard',
   },
   {
+    title: 'Item',
+    group: 'apps',
+    name: 'Item',
+    icon: 'perm_media',
+    href: '/#/item'
+  },
+  {
     title: 'Chat',
     group: 'apps',
     icon: 'chat_bubble',

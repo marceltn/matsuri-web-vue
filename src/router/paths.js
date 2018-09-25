@@ -100,6 +100,17 @@ export default [
   //   )
   // },
   {
+    path: '/item',
+    meta: { },
+    name: 'Item',
+    props: (route) => ({ type: route.query.type }),
+    component: () => import(
+      /* webpackChunkName: "routes" */
+      /* webpackMode: "lazy-once" */
+      `@/pages/Item.vue`
+    )
+  },  
+  {
     path: '/media',
     meta: { },
     name: 'Media',
